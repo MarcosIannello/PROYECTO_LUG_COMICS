@@ -1,0 +1,11 @@
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\bin\Debug\ConnectionStringEjemplo.exe.config
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\bin\Debug\ConnectionStringEjemplo.exe
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\bin\Debug\ConnectionStringEjemplo.pdb
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.csproj.AssemblyReference.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.csproj.SuggestedBindingRedirects.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.frmFacultad.resources
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.Properties.Resources.resources
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.csproj.GenerateResource.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.csproj.CoreCompileInputs.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.exe
+C:\Users\ianne\OneDrive\Escritorio\LUG\UAIProyectos\PROYECTOS_LUG\ConnectionStringEjemplo\obj\Debug\ConnectionStringEjemplo.pdb
