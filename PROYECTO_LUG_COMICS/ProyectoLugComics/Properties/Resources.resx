@@ -124,13 +124,16 @@
   <data name="aa77f81013e25ade4453920edf693d35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aa77f81013e25ade4453920edf693d35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HomeComics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeComics.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="thumb-1920-327321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thumb-1920-327321.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ddf8fa73c1ded9bf5c0e5b3501e2e748" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ddf8fa73c1ded9bf5c0e5b3501e2e748.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HomeComics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomeComics.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\Logo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
