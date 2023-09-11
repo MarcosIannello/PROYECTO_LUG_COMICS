@@ -1,4 +1,5 @@
 ﻿using BLL;
+using MetroSet_UI.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace ProyectoLugComics
 {
-    public partial class frmRegistrarse : Form
+    public partial class frmRegistrarse : MetroSetForm
     {
         public frmRegistrarse()
         {

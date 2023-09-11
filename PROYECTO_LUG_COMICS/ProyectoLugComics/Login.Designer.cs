@@ -59,10 +59,10 @@
             // 
             // btnRegistrarse
             // 
-            this.btnRegistrarse.Location = new System.Drawing.Point(207, 224);
+            this.btnRegistrarse.Location = new System.Drawing.Point(205, 224);
             this.btnRegistrarse.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrarse.Name = "btnRegistrarse";
-            this.btnRegistrarse.Size = new System.Drawing.Size(100, 27);
+            this.btnRegistrarse.Size = new System.Drawing.Size(119, 34);
             this.btnRegistrarse.TabIndex = 3;
             this.btnRegistrarse.Text = "Registrarse";
             this.btnRegistrarse.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.label2.Location = new System.Drawing.Point(111, 123);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(108, 26);
+            this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -99,7 +99,7 @@
             this.label1.Location = new System.Drawing.Point(111, 63);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(117, 26);
+            this.label1.Size = new System.Drawing.Size(95, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "UserName";
             // 
@@ -109,7 +109,7 @@
             this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(132, 32);
+            this.txtPassword.Size = new System.Drawing.Size(132, 27);
             this.txtPassword.TabIndex = 0;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -118,7 +118,7 @@
             this.txtUsername.Location = new System.Drawing.Point(263, 54);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(132, 32);
+            this.txtUsername.Size = new System.Drawing.Size(132, 27);
             this.txtUsername.TabIndex = 0;
             // 
             // metroSetControlBox1
@@ -151,7 +151,7 @@
             // Login
             // 
             this.AllowResize = false;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 26F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -167,6 +167,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

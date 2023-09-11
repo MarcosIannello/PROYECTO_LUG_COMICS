@@ -87,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -111,6 +112,21 @@
       <Project>{bfa1976d-1072-40f5-af21-a06295ae3a62}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb-1920-327321.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa77f81013e25ade4453920edf693d35.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aa77f81013e25ade4453920edf693d351.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddf8fa73c1ded9bf5c0e5b3501e2e748.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeComics.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -7,10 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroSet_UI.Forms;
 
 namespace ProyectoLugComics
 {
-    public partial class frmHome : Form
+    public partial class frmHome : MetroSetForm
     {
         public frmHome()
         {
@@ -20,6 +21,11 @@ namespace ProyectoLugComics
         private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void frmHome_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -46,7 +46,7 @@
             this.groupBox1.Controls.Add(this.txtPasswordRegis);
             this.groupBox1.Controls.Add(this.txtUsernameRegis);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Location = new System.Drawing.Point(35, 19);
+            this.groupBox1.Location = new System.Drawing.Point(57, 23);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
@@ -75,7 +75,7 @@
             this.label2.Location = new System.Drawing.Point(93, 118);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(67, 16);
+            this.label2.Size = new System.Drawing.Size(89, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Password";
             // 
@@ -85,7 +85,7 @@
             this.label1.Location = new System.Drawing.Point(93, 58);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(73, 16);
+            this.label1.Size = new System.Drawing.Size(95, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "UserName";
             // 
@@ -95,7 +95,7 @@
             this.txtPasswordRegis.Margin = new System.Windows.Forms.Padding(4);
             this.txtPasswordRegis.Name = "txtPasswordRegis";
             this.txtPasswordRegis.PasswordChar = '*';
-            this.txtPasswordRegis.Size = new System.Drawing.Size(132, 22);
+            this.txtPasswordRegis.Size = new System.Drawing.Size(132, 27);
             this.txtPasswordRegis.TabIndex = 0;
             this.txtPasswordRegis.UseSystemPasswordChar = true;
             // 
@@ -104,12 +104,12 @@
             this.txtUsernameRegis.Location = new System.Drawing.Point(245, 49);
             this.txtUsernameRegis.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsernameRegis.Name = "txtUsernameRegis";
-            this.txtUsernameRegis.Size = new System.Drawing.Size(132, 22);
+            this.txtUsernameRegis.Size = new System.Drawing.Size(132, 27);
             this.txtUsernameRegis.TabIndex = 0;
             // 
             // frmRegistrarse
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(531, 305);
             this.Controls.Add(this.groupBox1);
