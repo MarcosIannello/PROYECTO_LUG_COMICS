@@ -1,0 +1,44 @@
+# Carpeta bin y obj generada por Visual Studio
+bin/
+obj/
+
+# Archivos de configuración de Visual Studio
+.vscode/
+*.suo
+*.user
+*.sln.docstates
+
+# Archivos de respaldo y archivos de caché
+*~
+*.swp
+
+# Paquetes NuGet
+packages/
+
+# Carpeta de salida de compilación
+Debug/
+Release/
+
+# Archivos de configuración local
+*.suo
+*.user
+*.userprefs
+
+# Carpetas de archivos temporales
+[Tt]emp/
+[Tt]est[Rr]esults/
+
+# Logs
+logs/
+*.log
+*.log.*
+log.txt
+
+# Archivos generados por herramientas
+[Tt]ools/
+
+# Configuración de usuario de Visual Studio
+.vsconfig
+
+# Carpeta de salida de análisis de código
+_SonarQube/
