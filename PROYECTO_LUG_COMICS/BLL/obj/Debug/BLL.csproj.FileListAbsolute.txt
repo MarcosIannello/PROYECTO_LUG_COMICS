@@ -20,3 +20,14 @@ C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYE
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.csproj.CopyComplete
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.dll
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\bin\Debug\BLL.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\bin\Debug\BLL.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\bin\Debug\BE.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\bin\Debug\DAL.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\bin\Debug\BE.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\bin\Debug\DAL.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BLL\obj\Debug\BLL.pdb

@@ -10,3 +10,9 @@ C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYE
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.dll
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BE\bin\Debug\BE.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BE\bin\Debug\BE.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.csproj.AssemblyReference.cache
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\BE\obj\Debug\BE.pdb

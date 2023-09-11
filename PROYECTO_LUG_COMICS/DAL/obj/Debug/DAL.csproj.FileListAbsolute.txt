@@ -16,3 +16,12 @@ C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYE
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.dll
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\UAIProyectos\PROYECTOS_LUG\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\bin\Debug\DAL.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\bin\Debug\DAL.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\bin\Debug\BE.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\bin\Debug\BE.pdb
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.dll
+C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\DAL\obj\Debug\DAL.pdb
