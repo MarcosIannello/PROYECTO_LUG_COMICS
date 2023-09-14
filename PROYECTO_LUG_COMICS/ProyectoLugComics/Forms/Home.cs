@@ -11,7 +11,7 @@ using MetroSet_UI.Forms;
 
 namespace ProyectoLugComics
 {
-    public partial class frmHome : Form
+    public partial class frmHome : RoundedForm
     {
         public frmHome()
         {
@@ -26,6 +26,44 @@ namespace ProyectoLugComics
         private void frmHome_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCloseLogin_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+       
+        private void btnCloseLogin_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2TileButton1_MouseHover(object sender, EventArgs e)
+        {
+            sidebar.Show();
+        }
+
+        private void guna2TileButton1_MouseLeave(object sender, EventArgs e)
+        {
+            sidebar.Hide();
+        }
+
+        private void sidebar_MouseHover(object sender, EventArgs e)
+        {
+            sidebar.Show();
+
+        }
+
+        private void sidebar_MouseLeave(object sender, EventArgs e)
+        {
+
+            sidebar.Hide();
         }
     }
 }

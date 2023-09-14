@@ -12,17 +12,17 @@ using System.Windows.Forms;
 
 namespace ProyectoLugComics
 {
-    public partial class frmRegistrarse : Form
+    public partial class frmRegistrarse : RoundedForm
     {
         public frmRegistrarse()
         {
             InitializeComponent();
         }
 
-        private void frmRegistrarse_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            volverAlLogin();
-        }
+        //private void frmRegistrarse_FormClosed(object sender, FormClosedEventArgs e)
+        //{
+        //    volverAlLogin();
+        //}
 
         private void BtnRegistrarse_Click(object sender, EventArgs e)
         {
@@ -57,7 +57,12 @@ namespace ProyectoLugComics
         {
             Login login = new Login();
             login.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            volverAlLogin();
         }
     }
 }

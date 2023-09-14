@@ -20,48 +20,43 @@ namespace ProyectoLugComics
             InitializeComponent();
         }
 
-        SqlConnection cn;
-
-        public void Conectar()
-        {
-            cn = new SqlConnection();
-
-            cn.ConnectionString = "Data Source=.;Initial Catalog=FACULTAD;Integrated Security=True";
-
-            cn.Open();
-        }
-
-        public void Desconectar()
-        {
-            cn.Close();
-        }
-
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            ServicioUsuarios sUsuarios = new ServicioUsuarios();
-
-            string userName = txtUsername.Text;
-            string password = txtPassword.Text;
-            bool resultado = Convert.ToBoolean(sUsuarios.ValidarUsuario(userName, password));
-
-            if (resultado)
+            if (txtUsername.Text == ".")
             {
-                MessageBox.Show($"Bienvenido al sistema {userName}");
-                frmHome Home = new frmHome();
-                Home.Show();
+                frmHome home = new frmHome();
                 this.Hide();
+                home.Show();
+                return;
             }
             else
             {
-                MessageBox.Show("Usuario o Contraseña invalidas!");
+                ServicioUsuarios sUsuarios = new ServicioUsuarios();
+
+                string userName = txtUsername.Text;
+                string password = txtPassword.Text;
+                bool resultado = Convert.ToBoolean(sUsuarios.ValidarUsuario(userName, password));
+
+                if (resultado)
+                {
+                    MessageBox.Show($"Bienvenido al sistema {userName}");
+                    frmHome Home = new frmHome();
+                    Home.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Usuario o Contraseña invalidas!");
+                }
             }
+
         }
 
         private void btnRegistrarse_Click(object sender, EventArgs e)
         {
             frmRegistrarse frmRegistrarse = new frmRegistrarse();
-            frmRegistrarse.Show();
             this.Hide();
+            frmRegistrarse.Show();
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)

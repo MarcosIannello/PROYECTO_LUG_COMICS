@@ -139,5 +139,20 @@
   <ItemGroup>
     <None Include="Img\Logo.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\arrowOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\arrowOKOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\close icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Img\MenuButton.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

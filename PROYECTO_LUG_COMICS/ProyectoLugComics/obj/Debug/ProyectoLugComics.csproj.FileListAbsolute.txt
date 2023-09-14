@@ -96,3 +96,25 @@ C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.exe
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.pdb
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\Guna.UI2.dll
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\ProyectoLugComics.exe.config
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\ProyectoLugComics.exe
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\ProyectoLugComics.pdb
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\BE.dll
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\BLL.dll
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\Guna.UI2.dll
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\MetroSet UI.dll
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\DAL.dll
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\BE.pdb
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\BLL.pdb
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\DAL.pdb
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.AssemblyReference.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.SuggestedBindingRedirects.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Login.resources
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.frmRegistrarse.resources
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.frmHome.resources
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Properties.Resources.resources
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.GenerateResource.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.CoreCompileInputs.cache
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.CopyComplete
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.exe
+C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.pdb
