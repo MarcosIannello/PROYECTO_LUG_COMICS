@@ -46,24 +46,24 @@ namespace ProyectoLugComics
 
         private void guna2TileButton1_MouseHover(object sender, EventArgs e)
         {
-            sidebar.Show();
+            //sidebar.Show();
         }
 
         private void guna2TileButton1_MouseLeave(object sender, EventArgs e)
         {
-            sidebar.Hide();
+            //sidebar.Hide();
         }
 
         private void sidebar_MouseHover(object sender, EventArgs e)
         {
-            sidebar.Show();
+            //sidebar.Show();
 
         }
 
         private void sidebar_MouseLeave(object sender, EventArgs e)
         {
 
-            sidebar.Hide();
+            //sidebar.Hide();
         }
     }
 }

@@ -31,8 +31,6 @@
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2TileButton1 = new Guna.UI2.WinForms.Guna2TileButton();
-            this.sidebar = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,55 +100,16 @@
             this.btnCloseLogin.UseTransparentBackground = true;
             this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click_1);
             // 
-            // guna2TileButton1
-            // 
-            this.guna2TileButton1.Animated = true;
-            this.guna2TileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton1.BackgroundImage = global::ProyectoLugComics.Properties.Resources.MenuButton;
-            this.guna2TileButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2TileButton1.BorderRadius = 20;
-            this.guna2TileButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2TileButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2TileButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2TileButton1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TileButton1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2TileButton1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.guna2TileButton1.HoverState.FillColor = System.Drawing.Color.DarkCyan;
-            this.guna2TileButton1.Image = global::ProyectoLugComics.Properties.Resources.MenuButton;
-            this.guna2TileButton1.ImageSize = new System.Drawing.Size(90, 90);
-            this.guna2TileButton1.Location = new System.Drawing.Point(12, 13);
-            this.guna2TileButton1.Name = "guna2TileButton1";
-            this.guna2TileButton1.Size = new System.Drawing.Size(111, 105);
-            this.guna2TileButton1.TabIndex = 6;
-            this.guna2TileButton1.UseTransparentBackground = true;
-            this.guna2TileButton1.MouseLeave += new System.EventHandler(this.guna2TileButton1_MouseLeave);
-            this.guna2TileButton1.MouseHover += new System.EventHandler(this.guna2TileButton1_MouseHover);
-            // 
-            // sidebar
-            // 
-            this.sidebar.BorderRadius = 20;
-            this.sidebar.Location = new System.Drawing.Point(141, 0);
-            this.sidebar.Name = "sidebar";
-            this.sidebar.Size = new System.Drawing.Size(165, 514);
-            this.sidebar.TabIndex = 7;
-            this.sidebar.Visible = false;
-            this.sidebar.MouseLeave += new System.EventHandler(this.sidebar_MouseLeave);
-            this.sidebar.MouseHover += new System.EventHandler(this.sidebar_MouseHover);
-            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1104, 514);
-            this.Controls.Add(this.sidebar);
-            this.Controls.Add(this.guna2TileButton1);
             this.Controls.Add(this.btnCloseLogin);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
@@ -166,7 +125,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
-        private Guna.UI2.WinForms.Guna2TileButton guna2TileButton1;
-        private Guna.UI2.WinForms.Guna2Panel sidebar;
     }
 }
