@@ -85,7 +85,6 @@ C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\BLL.pdb
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\DAL.pdb
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.AssemblyReference.cache
-C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.csproj.SuggestedBindingRedirects.cache
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Login.resources
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.frmRegistrarse.resources
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.frmHome.resources
