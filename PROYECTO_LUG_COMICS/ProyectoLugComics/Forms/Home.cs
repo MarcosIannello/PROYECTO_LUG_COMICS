@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MetroSet_UI.Forms;
+using ProyectoLugComics.Forms;
 
 namespace ProyectoLugComics
 {
@@ -64,6 +65,13 @@ namespace ProyectoLugComics
         {
 
             //sidebar.Hide();
+        }
+
+        private void btnMostrarComics_Click(object sender, EventArgs e)
+        {
+           FrmAlta frmAlta = new FrmAlta();
+            this.Hide();
+            frmAlta.Show();
         }
     }
 }

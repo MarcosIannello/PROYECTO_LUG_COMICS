@@ -31,6 +31,7 @@
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnMostrarComics = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +52,10 @@
             this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CircleButton1.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(1009, 13);
-            this.guna2CircleButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(757, 11);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CircleButton1.Size = new System.Drawing.Size(37, 34);
+            this.guna2CircleButton1.Size = new System.Drawing.Size(28, 28);
             this.guna2CircleButton1.TabIndex = 2;
             this.guna2CircleButton1.Text = "-";
             this.guna2CircleButton1.UseTransparentBackground = true;
@@ -68,7 +68,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1104, 514);
+            this.pictureBox1.Size = new System.Drawing.Size(828, 418);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -90,22 +90,32 @@
             this.btnCloseLogin.HoverState.FillColor = System.Drawing.Color.White;
             this.btnCloseLogin.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseLogin.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnCloseLogin.Location = new System.Drawing.Point(1054, 13);
-            this.btnCloseLogin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCloseLogin.Location = new System.Drawing.Point(790, 11);
             this.btnCloseLogin.Name = "btnCloseLogin";
             this.btnCloseLogin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnCloseLogin.Size = new System.Drawing.Size(37, 34);
+            this.btnCloseLogin.Size = new System.Drawing.Size(28, 28);
             this.btnCloseLogin.TabIndex = 4;
             this.btnCloseLogin.Text = "X";
             this.btnCloseLogin.UseTransparentBackground = true;
             this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click_1);
             // 
+            // btnMostrarComics
+            // 
+            this.btnMostrarComics.Location = new System.Drawing.Point(194, 223);
+            this.btnMostrarComics.Name = "btnMostrarComics";
+            this.btnMostrarComics.Size = new System.Drawing.Size(75, 23);
+            this.btnMostrarComics.TabIndex = 5;
+            this.btnMostrarComics.Text = "COMICS";
+            this.btnMostrarComics.UseVisualStyleBackColor = true;
+            this.btnMostrarComics.Click += new System.EventHandler(this.btnMostrarComics_Click);
+            // 
             // frmHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1104, 514);
+            this.ClientSize = new System.Drawing.Size(828, 418);
+            this.Controls.Add(this.btnMostrarComics);
             this.Controls.Add(this.btnCloseLogin);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.pictureBox1);
@@ -125,5 +135,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
+        private System.Windows.Forms.Button btnMostrarComics;
     }
 }

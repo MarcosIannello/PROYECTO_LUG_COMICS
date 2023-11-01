@@ -118,10 +118,10 @@ namespace DAL
         public DataTable TraerDataTable(string storeProcedure, SqlParameter[] parametros)
         {
             DataTable odt = new DataTable();
+            SqlConnection cn = this.GetConnection();
+            cn.Open();
 
-            this.Open();
-
-            SqlCommand cmd = new SqlCommand();
+            SqlCommand cmd = new SqlCommand(storeProcedure,cn);
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddRange(parametros);
 

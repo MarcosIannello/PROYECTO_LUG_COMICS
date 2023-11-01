@@ -1,0 +1,12 @@
+USE [FACULTAD]
+GO
+/****** Object:  StoredProcedure [dbo].[REGISTRAR_USUARIO]    Script Date: 31/10/2023 00:15:05 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE PROCEDURE TRAER_COMICS
+AS
+BEGIN
+	select * from ProyectoLUG.Comics
+END;

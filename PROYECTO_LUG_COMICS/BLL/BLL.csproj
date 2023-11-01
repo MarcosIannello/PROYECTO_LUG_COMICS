@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="PasswordHasher.cs" />
+    <Compile Include="ServicioComic.cs" />
     <Compile Include="ServicioUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
