@@ -44,6 +44,10 @@
             this.btnCargarImagen = new Guna.UI2.WinForms.Guna2Button();
             this.pbPortada = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnInsertarComic = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnModificar = new Guna.UI2.WinForms.Guna2Button();
+            this.btnEliminar = new Guna.UI2.WinForms.Guna2Button();
+            this.cbDelete = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtID = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvComics)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPortada)).BeginInit();
             this.SuspendLayout();
@@ -267,11 +271,80 @@
             this.btnInsertarComic.Text = "Insertar Comic";
             this.btnInsertarComic.Click += new System.EventHandler(this.btnInsertarComic_Click);
             // 
+            // btnModificar
+            // 
+            this.btnModificar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnModificar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnModificar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnModificar.ForeColor = System.Drawing.Color.White;
+            this.btnModificar.Location = new System.Drawing.Point(67, 361);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(107, 45);
+            this.btnModificar.TabIndex = 6;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnEliminar.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnEliminar.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnEliminar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnEliminar.ForeColor = System.Drawing.Color.White;
+            this.btnEliminar.Location = new System.Drawing.Point(12, 425);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(107, 36);
+            this.btnEliminar.TabIndex = 6;
+            this.btnEliminar.Text = "Eliminar x ID";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            // 
+            // cbDelete
+            // 
+            this.cbDelete.BackColor = System.Drawing.Color.Transparent;
+            this.cbDelete.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbDelete.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDelete.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDelete.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cbDelete.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cbDelete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cbDelete.ItemHeight = 30;
+            this.cbDelete.Location = new System.Drawing.Point(390, 437);
+            this.cbDelete.Name = "cbDelete";
+            this.cbDelete.Size = new System.Drawing.Size(140, 36);
+            this.cbDelete.TabIndex = 7;
+            this.cbDelete.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
+            // 
+            // txtID
+            // 
+            this.txtID.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtID.DefaultText = "";
+            this.txtID.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtID.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtID.Location = new System.Drawing.Point(141, 425);
+            this.txtID.Name = "txtID";
+            this.txtID.PasswordChar = '\0';
+            this.txtID.PlaceholderText = "";
+            this.txtID.SelectedText = "";
+            this.txtID.Size = new System.Drawing.Size(106, 36);
+            this.txtID.TabIndex = 8;
+            // 
             // FrmAlta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(829, 500);
+            this.Controls.Add(this.txtID);
+            this.Controls.Add(this.cbDelete);
+            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnInsertarComic);
             this.Controls.Add(this.pbPortada);
             this.Controls.Add(this.btnCargarImagen);
@@ -316,5 +389,9 @@
         private Guna.UI2.WinForms.Guna2Button btnCargarImagen;
         protected Guna.UI2.WinForms.Guna2PictureBox pbPortada;
         private Guna.UI2.WinForms.Guna2CircleButton btnInsertarComic;
+        private Guna.UI2.WinForms.Guna2Button btnModificar;
+        private Guna.UI2.WinForms.Guna2Button btnEliminar;
+        private Guna.UI2.WinForms.Guna2ComboBox cbDelete;
+        private Guna.UI2.WinForms.Guna2TextBox txtID;
     }
 }

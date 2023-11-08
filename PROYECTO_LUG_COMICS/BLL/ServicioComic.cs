@@ -44,6 +44,47 @@ namespace BLL
            
         }
 
+        public int EliminarComic(int id)
+        {
+            ConexionSQL conexionSQL = new ConexionSQL();
+            try
+            {
+                SqlParameter[] parametros = new SqlParameter[1];
+                parametros[0] = new SqlParameter("@ID", id);
+                int resultado = conexionSQL.Escribir("ELIMINAR_COMIC", parametros);
+                return resultado;
+                
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+        public int EditarComic (int id, string titulo, string categoria, string editorial, string descripcion, float precio, byte[] portada, int stock)
+        {
+            ConexionSQL conexionSQL = new ConexionSQL();
+            try
+            {
+                SqlParameter[] parametros = new SqlParameter[8];
+                parametros[0] = new SqlParameter("@ID", id);
+                parametros[1] = new SqlParameter("@TITULO", titulo);
+                parametros[2] = new SqlParameter("@CATEGORIA", categoria);
+                parametros[3] = new SqlParameter("@EDITORIAL", editorial);
+                parametros[4] = new SqlParameter("@DESCRIPCION", descripcion);
+                parametros[5] = new SqlParameter("@PRECIO", precio);
+                parametros[6] = new SqlParameter("@PORTADA", portada);
+                parametros[7] = new SqlParameter("@STOCK", stock);
+
+                int resultado = conexionSQL.Escribir("EDITAR_COMIC", parametros);
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<Comic> TraerComics(int id = -1)
         {
             try

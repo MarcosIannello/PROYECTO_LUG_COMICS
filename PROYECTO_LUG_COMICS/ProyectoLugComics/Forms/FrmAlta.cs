@@ -89,7 +89,8 @@ namespace ProyectoLugComics.Forms
             txtDescripcion.Text = aux.Descripcion;
             txtPrecio.Text = aux.Precio.ToString();
             txtStock.Text = aux.Stock.ToString();
-            Image img = Image.FromStream(ByteToImage(aux.Portada));
+            txtID.Text = aux.ID.ToString();
+         /*   Image img = Image.FromStream(ByteToImage(aux.Portada));
             
 
             if (aux.Portada != null)
@@ -100,7 +101,7 @@ namespace ProyectoLugComics.Forms
             {
                 pbPortada.Image = null;
             }
-
+         */
         }
 
         public byte[] ImageToByte(Image imagen)
@@ -129,5 +130,58 @@ namespace ProyectoLugComics.Forms
             return ms;
         }
 
+        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var listaIDs = oServicioComics.TraerComics();
+            cbDelete.Items.Clear();
+            cbDelete.DataSource = listaIDs;
+            cbDelete.DisplayMember = "ID";
+
+        }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(txtID.Text);
+            string titulo = txtTitulo.Text;
+            string categoria = txtCategoria.Text;
+            string editorial = txtEditorial.Text;
+            string descripcion = txtDescripcion.Text;
+            float precio = float.Parse(txtPrecio.Text);
+            byte[] portada = null;//ImageToByte(pbPortada.Image);
+            int stock = int.Parse(txtStock.Text);
+
+            int resultado = oServicioComics.EditarComic(ID, titulo, categoria, editorial, descripcion, precio, portada, stock);
+            if (resultado == 1)
+            {
+                MessageBox.Show("Comic modificado con exito");
+                CargarDataGrid();
+            }
+            else
+            {
+                MessageBox.Show("Error al modificar comic");
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int ID = int.Parse(txtID.Text);
+            try
+            {
+                int resultado = oServicioComics.EliminarComic(ID);
+                if (resultado == 1)
+                {
+                    MessageBox.Show("Comic eliminado con exito");
+                    CargarDataGrid();
+                }
+                else
+                {
+                    MessageBox.Show("Error al eliminar comic");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
