@@ -85,19 +85,15 @@ namespace BLL
             }
         }
 
-        public List<Comic> TraerComics(int id = -1)
+        public List<Comic> TraerComics(string id = null)
         {
             try
             {   List<Comic> listacomics = new List<Comic>();
-                string sID = id.ToString();
-                if (id ==-1)
-                {
-                      sID = null;
-                }
+                               
 
                 ConexionSQL conexionSQL = new ConexionSQL();
                 SqlParameter[] parametros = new SqlParameter[1];
-                parametros[0] = new SqlParameter("@ID", sID);
+                parametros[0] = new SqlParameter("@ID", id);
                 DataTable resultado = conexionSQL.TraerDataTable("TRAER_COMICS", parametros);
 
                 
@@ -114,7 +110,11 @@ namespace BLL
 
                     if (!row["PORTADA"].Equals(DBNull.Value))
                     {
-                        comic.Portada = (byte[])row["PORTADA"];
+                        string base64String = row["PORTADA"].ToString();
+
+                        byte[] portadaBytes = Convert.FromBase64String(base64String);
+
+                        comic.Portada = portadaBytes;
                     }
                     
                     

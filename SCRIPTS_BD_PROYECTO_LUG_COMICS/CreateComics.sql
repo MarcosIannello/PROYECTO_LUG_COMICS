@@ -1,4 +1,4 @@
-
+use FACULTAD
 CREATE TABLE [ProyectoLUG].Comics (
     ID int PRIMARY KEY NOT NULL,
     Titulo nvarchar(50) NOT NULL,
@@ -6,6 +6,7 @@ CREATE TABLE [ProyectoLUG].Comics (
     Editorial nvarchar(50) NOT NULL,
     Descripcion nvarchar(50),
     Precio float NOT NULL,
-    Portada varbinary(MAX) NOT NULL,
+    Portada nvarchar(MAX) NULL,
     Stock int
 )
+

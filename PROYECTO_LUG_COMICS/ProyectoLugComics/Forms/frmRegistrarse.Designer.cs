@@ -104,6 +104,7 @@
             this.BtnRegistrarse.Size = new System.Drawing.Size(153, 38);
             this.BtnRegistrarse.TabIndex = 6;
             this.BtnRegistrarse.Text = "Registrarse";
+            this.BtnRegistrarse.Click += new System.EventHandler(this.BtnRegistrarse_Click);
             // 
             // guna2CircleButton1
             // 
