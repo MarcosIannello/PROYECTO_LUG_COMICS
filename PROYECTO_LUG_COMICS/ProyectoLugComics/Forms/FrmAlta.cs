@@ -27,6 +27,8 @@ namespace ProyectoLugComics.Forms
             CargarDataGrid();
         }
 
+        List<Byte[]> listaPortadas = new List<Byte[]>();
+
         private void btnCargarImagen_Click(object sender, EventArgs e)
         {
             OpenFileDialog opdCargarImagen = new OpenFileDialog();
@@ -78,6 +80,12 @@ namespace ProyectoLugComics.Forms
         public void CargarDataGrid()
         {
             var lista = oServicioComics.TraerComics();
+            
+            //foreach (Comic comic in lista)
+            //{
+            //    listaPortadas.Add(comic.Portada);
+            //    comic.Portada = null;
+            //}
             dgvComics.DataSource = null;
             dgvComics.DataSource = lista;
         }
@@ -94,7 +102,14 @@ namespace ProyectoLugComics.Forms
             txtPrecio.Text = aux.Precio.ToString();
             txtStock.Text = aux.Stock.ToString();
             txtID.Text = aux.ID.ToString();
+<<<<<<< HEAD
             pbPortada.Image = FromBase64(aux.Portada);     
+=======
+
+            pbPortada.Image = Image.FromStream(ByteToImage(aux.Portada));
+            
+
+>>>>>>> ddf650733b5386620d4cc9cb12ba42d9eacfaf08
         }
 
         Image FromBase64(string base64)
