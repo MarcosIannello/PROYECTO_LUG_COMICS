@@ -14,7 +14,7 @@ namespace BLL
     public class ServicioComic
     {
 
-        public int InsertarComic(string titulo, string categoria, string editorial, string descripcion, float precio, byte[] portada, int stock)
+        public int InsertarComic(string titulo, string categoria, string editorial, string descripcion, float precio, string portada, int stock)
         {
             ConexionSQL conexionSQL = new ConexionSQL();
 
@@ -61,7 +61,7 @@ namespace BLL
             }
         }
 
-        public int EditarComic (int id, string titulo, string categoria, string editorial, string descripcion, float precio, byte[] portada, int stock)
+        public int EditarComic (int id, string titulo, string categoria, string editorial, string descripcion, float precio, string portada, int stock)
         {
             ConexionSQL conexionSQL = new ConexionSQL();
             try
@@ -114,7 +114,7 @@ namespace BLL
 
                     if (!row["PORTADA"].Equals(DBNull.Value))
                     {
-                        comic.Portada = (byte[])row["PORTADA"];
+                        comic.Portada = (string)row["PORTADA"];
                     }
                     
                     

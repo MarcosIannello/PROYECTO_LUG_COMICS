@@ -41,12 +41,16 @@ namespace ProyectoLugComics.Forms
 
         private void btnInsertarComic_Click(object sender, EventArgs e)
         {
+            //string path = pbPortada.Image;
+            string base64 = ToBase64(pbPortada.Image);
+
+
             string titulo = txtTitulo.Text;
             string categoria = txtCategoria.Text;
             string editorial = txtEditorial.Text;
             string descripcion = txtDescripcion.Text;
             float precio = float.Parse(txtPrecio.Text);
-            byte[] portada = ImageToByte(pbPortada.Image);
+            string portada = base64;
             int stock = int.Parse(txtStock.Text);
 
             
@@ -90,45 +94,63 @@ namespace ProyectoLugComics.Forms
             txtPrecio.Text = aux.Precio.ToString();
             txtStock.Text = aux.Stock.ToString();
             txtID.Text = aux.ID.ToString();
-         /*   Image img = Image.FromStream(ByteToImage(aux.Portada));
-            
-
-            if (aux.Portada != null)
-            {   
-                pbPortada.Image = Image.FromStream(ByteToImage(aux.Portada));
-            }
-            else
-            {
-                pbPortada.Image = null;
-            }
-         */
+            pbPortada.Image = FromBase64(aux.Portada);     
         }
 
-        public byte[] ImageToByte(Image imagen)
+        Image FromBase64(string base64)
         {
             try
             {
-                using (MemoryStream ms = new MemoryStream())
+                byte[] imageBytes = Convert.FromBase64String(base64);
+                using (MemoryStream ms = new MemoryStream(imageBytes))
                 {
-                    imagen.Save(ms, ImageFormat.Jpeg);  // Cambiar a un formato compatible si es necesario
-                    return ms.ToArray();
+                    Image image = Image.FromStream(ms);
+                    return image;
                 }
             }
             catch (Exception ex)
             {
-                // Manejar la excepción adecuadamente
-                Console.WriteLine("Error al convertir la imagen en bytes: " + ex.Message);
-                return new byte[0]; // Devolver un arreglo vacío o null si hay un error
+                MessageBox.Show($"Error al convertir de Base64 a imagen: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
             }
         }
 
-        public MemoryStream ByteToImage(byte[] img)
+
+        string ToBase64(System.Drawing.Image image)
         {
-            // byte[] img = (byte[])dgvComics.CurrentRow.Cells[6].Value;
-            
-            MemoryStream ms = new MemoryStream(img);
-            return ms;
+            if (image != null)
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    try
+                    {
+                        // Clonar la imagen para evitar conflictos de uso
+                        using (Image clonedImage = (Image)image.Clone())
+                        {
+                            // Liberar recursos de la imagen original
+                            image.Dispose();
+
+                            // Guardar el clon en el MemoryStream
+                            clonedImage.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        // Manejar la excepción
+                        MessageBox.Show($"Error al salvar la imagen clonada: {ex.Message}");
+                    }
+
+                    byte[] imageBytes = ms.GetBuffer().ToArray();
+                    return Convert.ToBase64String(imageBytes);
+                }
+            }
+            else
+            {
+                return string.Empty;
+            }
         }
+
+
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -141,24 +163,24 @@ namespace ProyectoLugComics.Forms
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            int ID = int.Parse(txtID.Text);
+            int id = int.Parse(txtID.Text);
             string titulo = txtTitulo.Text;
             string categoria = txtCategoria.Text;
             string editorial = txtEditorial.Text;
             string descripcion = txtDescripcion.Text;
             float precio = float.Parse(txtPrecio.Text);
-            byte[] portada = null;//ImageToByte(pbPortada.Image);
+            string portada = ToBase64(pbPortada.Image);
             int stock = int.Parse(txtStock.Text);
 
-            int resultado = oServicioComics.EditarComic(ID, titulo, categoria, editorial, descripcion, precio, portada, stock);
+            int resultado = oServicioComics.EditarComic(id, titulo, categoria, editorial, descripcion, precio, portada, stock);
             if (resultado == 1)
             {
-                MessageBox.Show("Comic modificado con exito");
+                MessageBox.Show("comic modificado con exito");
                 CargarDataGrid();
             }
             else
             {
-                MessageBox.Show("Error al modificar comic");
+                MessageBox.Show("error al modificar comic");
             }
         }
 
