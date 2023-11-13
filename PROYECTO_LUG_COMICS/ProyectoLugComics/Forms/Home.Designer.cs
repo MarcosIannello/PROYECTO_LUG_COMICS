@@ -32,6 +32,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMostrarComics = new Guna.UI2.WinForms.Guna2Button();
+            this.BtnComprarComics = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,7 +73,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCloseLogin
             // 
@@ -120,12 +120,33 @@
             this.btnMostrarComics.UseTransparentBackground = true;
             this.btnMostrarComics.Click += new System.EventHandler(this.btnMostrarComics_Click);
             // 
+            // BtnComprarComics
+            // 
+            this.BtnComprarComics.BackColor = System.Drawing.Color.Transparent;
+            this.BtnComprarComics.BorderRadius = 10;
+            this.BtnComprarComics.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.BtnComprarComics.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.BtnComprarComics.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.BtnComprarComics.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.BtnComprarComics.FillColor = System.Drawing.Color.White;
+            this.BtnComprarComics.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.BtnComprarComics.ForeColor = System.Drawing.Color.DimGray;
+            this.BtnComprarComics.IndicateFocus = true;
+            this.BtnComprarComics.Location = new System.Drawing.Point(319, 105);
+            this.BtnComprarComics.Name = "BtnComprarComics";
+            this.BtnComprarComics.Size = new System.Drawing.Size(180, 45);
+            this.BtnComprarComics.TabIndex = 6;
+            this.BtnComprarComics.Text = "COMPRAR";
+            this.BtnComprarComics.UseTransparentBackground = true;
+            this.BtnComprarComics.Click += new System.EventHandler(this.BtnComprarComics_Click);
+            // 
             // frmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(828, 418);
+            this.Controls.Add(this.BtnComprarComics);
             this.Controls.Add(this.btnMostrarComics);
             this.Controls.Add(this.btnCloseLogin);
             this.Controls.Add(this.guna2CircleButton1);
@@ -147,5 +168,6 @@
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
         private Guna.UI2.WinForms.Guna2Button btnMostrarComics;
+        private Guna.UI2.WinForms.Guna2Button BtnComprarComics;
     }
 }

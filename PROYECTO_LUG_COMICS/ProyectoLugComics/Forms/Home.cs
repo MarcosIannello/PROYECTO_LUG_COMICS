@@ -69,14 +69,16 @@ namespace ProyectoLugComics
 
         private void btnMostrarComics_Click(object sender, EventArgs e)
         {
-           FrmAlta frmAlta = new FrmAlta();
+            FrmAlta frmAlta = new FrmAlta();
             this.Hide();
             frmAlta.Show();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void BtnComprarComics_Click(object sender, EventArgs e)
         {
-
+            CompraComics compraComics = new CompraComics();
+            this.Hide();
+            compraComics.Show();
         }
     }
 }
