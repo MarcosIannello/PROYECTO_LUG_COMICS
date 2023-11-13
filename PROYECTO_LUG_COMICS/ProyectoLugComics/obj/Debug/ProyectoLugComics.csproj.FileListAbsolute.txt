@@ -120,3 +120,4 @@ C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\P
 C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\bin\Debug\Guna.UI2.dll
 C:\Users\JuanBe\Desktop\uai\Lug\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.FrmAlta.resources
 C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.FrmAlta.resources
+C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.FrmAlta.resources

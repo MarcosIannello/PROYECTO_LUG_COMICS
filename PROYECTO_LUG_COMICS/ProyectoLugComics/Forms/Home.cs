@@ -73,5 +73,10 @@ namespace ProyectoLugComics
             this.Hide();
             frmAlta.Show();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

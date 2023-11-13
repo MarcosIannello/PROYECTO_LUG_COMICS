@@ -11,7 +11,7 @@ CREATE OR ALTER PROCEDURE EDITAR_COMIC
 @Editorial nvarchar(50),
 @Descripcion nvarchar(50),
 @Precio float,
-@Portada varbinary(MAX) = null,
+@Portada nvarchar(max),
 @Stock int
 
 

@@ -118,11 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aa77f81013e25ade4453920edf693d35" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aa77f81013e25ade4453920edf693d35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="HomeComics" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\HomeComics.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="_dff5b28e-3046-4ceb-afb3-ec2319b5f940" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_dff5b28e-3046-4ceb-afb3-ec2319b5f940.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_ae2d92a5-b771-4dd0-a3ba-377ae7f7d38b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_ae2d92a5-b771-4dd0-a3ba-377ae7f7d38b.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrowOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\arrowOK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,17 +133,8 @@
   <data name="ddf8fa73c1ded9bf5c0e5b3501e2e748" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ddf8fa73c1ded9bf5c0e5b3501e2e748.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aa77f81013e25ade4453920edf693d351" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aa77f81013e25ade4453920edf693d351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arrowOKOK" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\arrowOKOK.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="close icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Img\close icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="aa77f81013e25ade4453920edf693d35" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aa77f81013e25ade4453920edf693d35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\Logo.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,7 +142,22 @@
   <data name="thumb-1920-327321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thumb-1920-327321.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="HomeComics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HomeComics.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="MenuButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Img\MenuButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aa77f81013e25ade4453920edf693d351" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aa77f81013e25ade4453920edf693d351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="close icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Img\close icon.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_6885ab56-64a5-45b9-ad1d-86fd70f543c1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\_6885ab56-64a5-45b9-ad1d-86fd70f543c1.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -57,9 +57,9 @@ namespace BE
 			set { precio = value; }
 		}
 
-		private string portada;
+		private byte[] portada;
 
-		public string Portada
+		public byte[] Portada
 		{
 			get { return portada; }
 			set { portada = value; }

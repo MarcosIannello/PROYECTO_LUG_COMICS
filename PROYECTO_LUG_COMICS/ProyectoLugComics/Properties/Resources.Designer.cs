@@ -63,6 +63,36 @@ namespace ProyectoLugComics.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _6885ab56_64a5_45b9_ad1d_86fd70f543c1 {
+            get {
+                object obj = ResourceManager.GetObject("_6885ab56-64a5-45b9-ad1d-86fd70f543c1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _ae2d92a5_b771_4dd0_a3ba_377ae7f7d38b {
+            get {
+                object obj = ResourceManager.GetObject("_ae2d92a5-b771-4dd0-a3ba-377ae7f7d38b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _dff5b28e_3046_4ceb_afb3_ec2319b5f940 {
+            get {
+                object obj = ResourceManager.GetObject("_dff5b28e-3046-4ceb-afb3-ec2319b5f940", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aa77f81013e25ade4453920edf693d35 {
             get {
                 object obj = ResourceManager.GetObject("aa77f81013e25ade4453920edf693d35", resourceCulture);

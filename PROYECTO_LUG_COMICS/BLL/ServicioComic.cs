@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -110,15 +111,11 @@ namespace BLL
 
                     if (!row["PORTADA"].Equals(DBNull.Value))
                     {
-<<<<<<< HEAD
-                        comic.Portada = (string)row["PORTADA"];
-=======
                         string base64String = row["PORTADA"].ToString();
 
                         byte[] portadaBytes = Convert.FromBase64String(base64String);
 
                         comic.Portada = portadaBytes;
->>>>>>> ddf650733b5386620d4cc9cb12ba42d9eacfaf08
                     }
                     
                     
@@ -126,9 +123,9 @@ namespace BLL
                 }
                 return listacomics;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw ex;
+                return new List<Comic>();
             }
 
         }

@@ -166,6 +166,15 @@
   <ItemGroup>
     <None Include="Img\MenuButton.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_dff5b28e-3046-4ceb-afb3-ec2319b5f940.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_ae2d92a5-b771-4dd0-a3ba-377ae7f7d38b.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\_6885ab56-64a5-45b9-ad1d-86fd70f543c1.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

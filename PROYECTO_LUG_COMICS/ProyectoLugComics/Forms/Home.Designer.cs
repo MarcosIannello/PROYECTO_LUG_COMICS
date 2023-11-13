@@ -31,7 +31,7 @@
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnMostrarComics = new System.Windows.Forms.Button();
+            this.btnMostrarComics = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +64,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ProyectoLugComics.Properties.Resources.HomeComics;
+            this.pictureBox1.Image = global::ProyectoLugComics.Properties.Resources._6885ab56_64a5_45b9_ad1d_86fd70f543c1;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
@@ -72,6 +72,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnCloseLogin
             // 
@@ -101,12 +102,22 @@
             // 
             // btnMostrarComics
             // 
-            this.btnMostrarComics.Location = new System.Drawing.Point(194, 223);
+            this.btnMostrarComics.BackColor = System.Drawing.Color.Transparent;
+            this.btnMostrarComics.BorderRadius = 10;
+            this.btnMostrarComics.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnMostrarComics.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnMostrarComics.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnMostrarComics.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnMostrarComics.FillColor = System.Drawing.Color.White;
+            this.btnMostrarComics.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnMostrarComics.ForeColor = System.Drawing.Color.DimGray;
+            this.btnMostrarComics.IndicateFocus = true;
+            this.btnMostrarComics.Location = new System.Drawing.Point(319, 12);
             this.btnMostrarComics.Name = "btnMostrarComics";
-            this.btnMostrarComics.Size = new System.Drawing.Size(75, 23);
-            this.btnMostrarComics.TabIndex = 5;
+            this.btnMostrarComics.Size = new System.Drawing.Size(180, 45);
+            this.btnMostrarComics.TabIndex = 6;
             this.btnMostrarComics.Text = "COMICS";
-            this.btnMostrarComics.UseVisualStyleBackColor = true;
+            this.btnMostrarComics.UseTransparentBackground = true;
             this.btnMostrarComics.Click += new System.EventHandler(this.btnMostrarComics_Click);
             // 
             // frmHome
@@ -135,6 +146,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
-        private System.Windows.Forms.Button btnMostrarComics;
+        private Guna.UI2.WinForms.Guna2Button btnMostrarComics;
     }
 }
