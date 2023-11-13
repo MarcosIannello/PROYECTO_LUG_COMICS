@@ -1,44 +1,109 @@
-# Carpeta bin y obj generada por Visual Studio
-bin/
-obj/
-
-# Archivos de configuración de Visual Studio
-.vscode/
+# User-specific files
+*.rsuser
 *.suo
 *.user
+*.userosscache
+*.sln.docstates
+*.suo
+*.cache
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+*.editorconfig
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
 *.sln.docstates
 
-# Archivos de respaldo y archivos de caché
-*~
-*.swp
+# Mono Auto Generated Files
+mono_crash.*
 
-# Paquetes NuGet
-packages/
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Carpeta de salida de compilación
-Debug/
-Release/
+# Folder config file
+Desktop.ini
 
-# Archivos de configuración local
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Visual Studio files
+*.user
+*.aps
+*.pch
+*.vspscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.scc
+*.opendb
+*.sdf
+*.pyc
+*.pyo
+*.mdf
+*.ldf
+
+# Visual Studio Code directories
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+*.editorconfig
+
+# User-specific files
 *.suo
 *.user
-*.userprefs
+*.userosscache
+*.sln.docstates
 
-# Carpetas de archivos temporales
-[Tt]emp/
-[Tt]est[Rr]esults/
+# Mono Auto Generated Files
+mono_crash.*
 
-# Logs
-logs/
-*.log
-*.log.*
-log.txt
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# Archivos generados por herramientas
-[Tt]ools/
+# Folder config file
+Desktop.ini
 
-# Configuración de usuario de Visual Studio
-.vsconfig
-
-# Carpeta de salida de análisis de código
-_SonarQube/
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
