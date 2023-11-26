@@ -22,33 +22,25 @@ namespace ProyectoLugComics
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == ".")
+            
+            ServicioUsuarios sUsuarios = new ServicioUsuarios();
+
+            string userName = txtUsername.Text;
+            string password = txtPassword.Text;
+            bool resultado = Convert.ToBoolean(sUsuarios.ValidarUsuario(userName, password));
+
+            if (resultado)
             {
-                frmHome home = new frmHome();
+                MessageBox.Show($"Bienvenido al sistema {userName}");
+                frmHome Home = new frmHome();
+                Home.Show();
                 this.Hide();
-                home.Show();
-                return;
             }
             else
             {
-                ServicioUsuarios sUsuarios = new ServicioUsuarios();
-
-                string userName = txtUsername.Text;
-                string password = txtPassword.Text;
-                bool resultado = Convert.ToBoolean(sUsuarios.ValidarUsuario(userName, password));
-
-                if (resultado)
-                {
-                    MessageBox.Show($"Bienvenido al sistema {userName}");
-                    frmHome Home = new frmHome();
-                    Home.Show();
-                    this.Hide();
-                }
-                else
-                {
-                    MessageBox.Show("Usuario o Contraseña invalidas!");
-                }
+                MessageBox.Show("Usuario o Contraseña invalidas!");
             }
+            
 
         }
 

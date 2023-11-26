@@ -94,7 +94,6 @@ namespace ProyectoLugComics.Forms
             txtPrecio.Text = comic.Precio.ToString();
             txtStock.Text = comic.Stock.ToString();
 
-           
         }
 
         private void btnCarritoCompra_Click(object sender, EventArgs e)
@@ -103,7 +102,7 @@ namespace ProyectoLugComics.Forms
         }
 
         private void btnAgregarAlCarrito_Click(object sender, EventArgs e)
-        {
+        { 
             var comic = comics[indiceActual];
             ComicsEnCarrito.Add(comic);
             CantComicsCarrito.Text = ComicsEnCarrito.Count.ToString();
@@ -114,6 +113,13 @@ namespace ProyectoLugComics.Forms
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnCarrito_Click(object sender, EventArgs e)
+        {
+            frmCarritoCompra CarritoCompra = new frmCarritoCompra(ComicsEnCarrito);
+            CarritoCompra.Show();
+            this.Close();
         }
     }
 }
