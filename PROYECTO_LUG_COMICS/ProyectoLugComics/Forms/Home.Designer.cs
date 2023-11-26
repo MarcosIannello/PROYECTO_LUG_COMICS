@@ -136,7 +136,7 @@
             this.BtnComprarComics.Name = "BtnComprarComics";
             this.BtnComprarComics.Size = new System.Drawing.Size(180, 45);
             this.BtnComprarComics.TabIndex = 6;
-            this.BtnComprarComics.Text = "COMPRAR";
+            this.BtnComprarComics.Text = "VER CATALOGO";
             this.BtnComprarComics.UseTransparentBackground = true;
             this.BtnComprarComics.Click += new System.EventHandler(this.BtnComprarComics_Click);
             // 

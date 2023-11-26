@@ -48,7 +48,7 @@ namespace ProyectoLugComics.Forms
             string editorial = txtEditorial.Text;
             string descripcion = txtDescripcion.Text;
             float precio = float.Parse(txtPrecio.Text);
-            string portada = ImageToBase64(pbPortada.ImageLocation);
+            string portada = oServicioComics.ImageToBase64(pbPortada.ImageLocation);
             int stock = int.Parse(txtStock.Text);
 
             
@@ -96,32 +96,32 @@ namespace ProyectoLugComics.Forms
             txtStock.Text = aux.Stock.ToString();
             txtID.Text = aux.ID.ToString();
 
-            pbPortada.Image = Image.FromStream(ByteToImage(aux.Portada));
+            pbPortada.Image = Image.FromStream(oServicioComics.ByteToImage(aux.Portada));
 
         }
 
-       public string ImageToBase64(string imagePath)
-        {
-            try 
-            {
-                byte[] imageBytes = File.ReadAllBytes(imagePath);
-                string base64String = Convert.ToBase64String(imageBytes);
-                return base64String;
+       //public string ImageToBase64(string imagePath)
+       // {
+       //     try 
+       //     {
+       //         byte[] imageBytes = File.ReadAllBytes(imagePath);
+       //         string base64String = Convert.ToBase64String(imageBytes);
+       //         return base64String;
             
-            }catch(Exception)
-            {
-                return string.Empty;
-            }
+       //     }catch(Exception)
+       //     {
+       //         return string.Empty;
+       //     }
 
-        }
+       // }
 
-        public MemoryStream ByteToImage(byte[] img)
-        {
-            // byte[] img = (byte[])dgvComics.CurrentRow.Cells[6].Value;
+       // public MemoryStream ByteToImage(byte[] img)
+       // {
+       //     // byte[] img = (byte[])dgvComics.CurrentRow.Cells[6].Value;
             
-            MemoryStream ms = new MemoryStream(img);
-            return ms;
-        }
+       //     MemoryStream ms = new MemoryStream(img);
+       //     return ms;
+       // }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -140,7 +140,7 @@ namespace ProyectoLugComics.Forms
             string editorial = txtEditorial.Text;
             string descripcion = txtDescripcion.Text;
             float precio = float.Parse(txtPrecio.Text);
-            string portada = ImageToBase64(pbPortada.ImageLocation);
+            string portada = oServicioComics.ImageToBase64(pbPortada.ImageLocation);
 
             int stock = int.Parse(txtStock.Text);
 

@@ -36,100 +36,86 @@ namespace DAL
 
         public int TraerUnValor(string storeProcedure, SqlParameter[] parametros)
         {
+
             try
             {
-                SqlConnection cn = this.GetConnection();
+                using (SqlConnection cn = this.GetConnection())
+                {
+                    cn.Open();
+                    using (SqlCommand cmd = new SqlCommand(storeProcedure, cn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddRange(parametros);
 
-                this.Open();
+                        int resultado = Convert.ToInt32(cmd.ExecuteScalar());
 
-                SqlCommand cmd = new SqlCommand(storeProcedure, cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-            
-                cmd.Parameters.AddRange(parametros);
-
-                int resultado = Convert.ToInt32(cmd.ExecuteScalar());
-
-                this.Close();
-
-                return resultado;
+                        return resultado;
+                    }
+                }
 
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
-                throw ex;
+                throw ex.InnerException;
             }
+
         }
 
-        public int Escribir(string storeProcedure, SqlParameter[] parametros)
+        public int RUD(string storeProcedure, SqlParameter[] parametros)
         {
+
             try
             {
-                SqlConnection cn = this.GetConnection();
-                this.Open();
-                SqlCommand cmd = new SqlCommand(storeProcedure, cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddRange(parametros);
-                cmd.ExecuteNonQuery();
-                this.Close();
+                using (SqlConnection cn = this.GetConnection()) 
+                {
+                    cn.Open();
 
-                return 1;
+                    using(SqlCommand cmd = new SqlCommand(storeProcedure, cn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddRange(parametros);
+                        
+                        return cmd.ExecuteNonQuery();
 
-            }
-            catch(Exception ex)
-            {
-                return 0;
-                throw ex;
-            }
-        }
-
-        public int Borrar(string storeProcedure, SqlParameter[] parametros)
-        {
-            try
-            {
-                SqlConnection cn = this.GetConnection();
-                this.Open();
-                SqlCommand cmd = new SqlCommand(storeProcedure, cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddRange(parametros);
-                cmd.ExecuteNonQuery();
-                this.Close();
-
-                return 1;
+                    }
+                }
 
             }
             catch (Exception ex)
             {
                 return 0;
-                throw ex;
+                throw ex.InnerException;
             }
         }
 
-        public int Update(string storeProcedure, SqlParameter[] parametros)
+        public DataTable Leer(string storeProcedure, SqlParameter[] parametros)
         {
-            return 1;
-        }
+            try
+            {
+                DataTable odt = new DataTable();
+                using (SqlConnection cn = this.GetConnection())
+                {
+                    cn.Open();
+                    using (SqlCommand cmd = new SqlCommand(storeProcedure, cn))
+                    {
+            
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddRange(parametros);
 
-        public DataSet Leer(string StoreProcedure)
-        {
-            DataSet oDataSet = new DataSet();
-            return oDataSet;
-        }
+                        SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
 
-        public DataTable TraerDataTable(string storeProcedure, SqlParameter[] parametros)
-        {
-            DataTable odt = new DataTable();
-            SqlConnection cn = this.GetConnection();
-            cn.Open();
+                        dataAdapter.Fill(odt);
 
-            SqlCommand cmd = new SqlCommand(storeProcedure,cn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddRange(parametros);
+                        return odt;
 
-            SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
+                    }
+                };
 
-            dataAdapter.Fill(odt);
+            }catch(Exception ex)
+            {
+                return null;
+            }
 
-            return odt;
         }
 
 
