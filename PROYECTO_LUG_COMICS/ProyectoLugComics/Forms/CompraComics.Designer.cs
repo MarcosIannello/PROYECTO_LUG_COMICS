@@ -31,8 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CompraComics));
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnImagenAnterior1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.btnProxImagen1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -104,48 +102,6 @@
             this.guna2CircleButton1.Text = "-";
             this.guna2CircleButton1.UseTransparentBackground = true;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
-            // 
-            // btnImagenAnterior1
-            // 
-            this.btnImagenAnterior1.Animated = true;
-            this.btnImagenAnterior1.BackColor = System.Drawing.Color.Transparent;
-            this.btnImagenAnterior1.BackgroundImage = global::ProyectoLugComics.Properties.Resources.arrowOKOK;
-            this.btnImagenAnterior1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnImagenAnterior1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnImagenAnterior1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnImagenAnterior1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnImagenAnterior1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnImagenAnterior1.FillColor = System.Drawing.Color.White;
-            this.btnImagenAnterior1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold);
-            this.btnImagenAnterior1.ForeColor = System.Drawing.Color.DimGray;
-            this.btnImagenAnterior1.IndicateFocus = true;
-            this.btnImagenAnterior1.Location = new System.Drawing.Point(236, 196);
-            this.btnImagenAnterior1.Name = "btnImagenAnterior1";
-            this.btnImagenAnterior1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnImagenAnterior1.Size = new System.Drawing.Size(44, 41);
-            this.btnImagenAnterior1.TabIndex = 8;
-            this.btnImagenAnterior1.UseTransparentBackground = true;
-            this.btnImagenAnterior1.Visible = false;
-            // 
-            // btnProxImagen1
-            // 
-            this.btnProxImagen1.Animated = true;
-            this.btnProxImagen1.BackColor = System.Drawing.Color.Transparent;
-            this.btnProxImagen1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnProxImagen1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnProxImagen1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnProxImagen1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnProxImagen1.FillColor = System.Drawing.Color.White;
-            this.btnProxImagen1.Font = new System.Drawing.Font("Segoe UI", 20.25F, System.Drawing.FontStyle.Bold);
-            this.btnProxImagen1.ForeColor = System.Drawing.Color.DimGray;
-            this.btnProxImagen1.IndicateFocus = true;
-            this.btnProxImagen1.Location = new System.Drawing.Point(728, 196);
-            this.btnProxImagen1.Name = "btnProxImagen1";
-            this.btnProxImagen1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.btnProxImagen1.Size = new System.Drawing.Size(44, 41);
-            this.btnProxImagen1.TabIndex = 8;
-            this.btnProxImagen1.UseTransparentBackground = true;
-            this.btnProxImagen1.Visible = false;
             // 
             // guna2GroupBox1
             // 
@@ -397,8 +353,6 @@
             this.Controls.Add(this.btnCarrito);
             this.Controls.Add(this.btnAgregarAlCarrito);
             this.Controls.Add(this.guna2GroupBox1);
-            this.Controls.Add(this.btnProxImagen1);
-            this.Controls.Add(this.btnImagenAnterior1);
             this.Controls.Add(this.PortadaComic);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.btnCloseLogin);
@@ -420,8 +374,6 @@
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2PictureBox PortadaComic;
-        private Guna.UI2.WinForms.Guna2CircleButton btnImagenAnterior1;
-        private Guna.UI2.WinForms.Guna2CircleButton btnProxImagen1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
