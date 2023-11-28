@@ -123,10 +123,23 @@ namespace ProyectoLugComics.Forms
                 return;
             }
 
+
+            if(comic.Stock != 0)
+            {
+                comic.Stock --;
+
+            }
+            else
+            {
+                MessageBox.Show("No hay stock de este articulo");
+
+            }
+
             ComicsEnCarrito.Add(comic);
             CantComicsCarrito.Text = ComicsEnCarrito.Count.ToString();
             CantComicsCarrito.Visible = true;
             btnCarrito.Visible = true;
+            txtStock.Text = comic.Stock.ToString();
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)
