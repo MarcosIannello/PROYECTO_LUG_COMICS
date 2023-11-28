@@ -97,31 +97,7 @@ namespace ProyectoLugComics.Forms
             txtID.Text = aux.ID.ToString();
 
             pbPortada.Image = Image.FromStream(oServicioComics.ByteToImage(aux.Portada));
-
         }
-
-       //public string ImageToBase64(string imagePath)
-       // {
-       //     try 
-       //     {
-       //         byte[] imageBytes = File.ReadAllBytes(imagePath);
-       //         string base64String = Convert.ToBase64String(imageBytes);
-       //         return base64String;
-            
-       //     }catch(Exception)
-       //     {
-       //         return string.Empty;
-       //     }
-
-       // }
-
-       // public MemoryStream ByteToImage(byte[] img)
-       // {
-       //     // byte[] img = (byte[])dgvComics.CurrentRow.Cells[6].Value;
-            
-       //     MemoryStream ms = new MemoryStream(img);
-       //     return ms;
-       // }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -140,7 +116,7 @@ namespace ProyectoLugComics.Forms
             string editorial = txtEditorial.Text;
             string descripcion = txtDescripcion.Text;
             float precio = float.Parse(txtPrecio.Text);
-            string portada = oServicioComics.ImageToBase64(pbPortada.ImageLocation);
+            string portada = oServicioComics.BDImgToBase64(ImageToByteArray(pbPortada.Image));
 
             int stock = int.Parse(txtStock.Text);
 
@@ -216,6 +192,26 @@ namespace ProyectoLugComics.Forms
         {
             this.WindowState = FormWindowState.Minimized;
 
+        }
+
+        public static byte[] ImageToByteArray(Image imagen)
+        {
+            try
+            {
+                using (MemoryStream ms = new MemoryStream())
+                {
+                    // Guardar la imagen en el MemoryStream en un formato específico (puedes ajustar según tus necesidades).
+                    imagen.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+
+                    // Devolver el byte array resultante.
+                    return ms.ToArray();
+                }
+            }
+            catch (Exception)
+            {
+                // Manejar cualquier excepción que pueda ocurrir durante la conversión.
+                return null;
+            }
         }
     }
 }

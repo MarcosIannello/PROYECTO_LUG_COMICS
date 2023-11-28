@@ -126,5 +126,22 @@ namespace DAL
             }
 
         }
+
+        public int EditarStock(int id, int stock)
+        {
+            ConexionSQL conexionSQL = new ConexionSQL();
+            try
+            {
+                SqlParameter[] parametros = new SqlParameter[2];
+                parametros[0] = new SqlParameter("@ID", id);
+                parametros[1] = new SqlParameter("@STOCK", stock);
+                int resultado = conexionSQL.RUD("EDITAR_STOCK", parametros);
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
     }
 }

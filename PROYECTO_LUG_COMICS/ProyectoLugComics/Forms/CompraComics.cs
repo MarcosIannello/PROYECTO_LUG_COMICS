@@ -3,6 +3,7 @@ using BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -92,7 +93,18 @@ namespace ProyectoLugComics.Forms
             txtTitulo.Text = comic.Titulo;
             txtDescripcion.Text = comic.Descripcion;
             txtPrecio.Text = comic.Precio.ToString();
-            txtStock.Text = comic.Stock.ToString();
+
+            if(comic.Stock == 0)
+            {
+                txtStock.Text = "No hay stock actualmente";
+                txtStock.ForeColor = Color.Red;
+            }
+            else
+            {
+                txtStock.Text = comic.Stock.ToString();
+                txtStock.ForeColor = Color.SlateGray;
+
+            }
 
         }
 
@@ -104,6 +116,13 @@ namespace ProyectoLugComics.Forms
         private void btnAgregarAlCarrito_Click(object sender, EventArgs e)
         { 
             var comic = comics[indiceActual];
+
+            if(comic.Stock == 0)
+            {
+                MessageBox.Show("No hay stock actualmente de este Comic Disculpe!");
+                return;
+            }
+
             ComicsEnCarrito.Add(comic);
             CantComicsCarrito.Text = ComicsEnCarrito.Count.ToString();
             CantComicsCarrito.Visible = true;

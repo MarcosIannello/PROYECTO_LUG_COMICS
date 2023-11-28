@@ -124,3 +124,5 @@ C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG
 C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.CompraComics.resources
 C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.CompraComics.resources
 C:\Users\ianne\OneDrive\Escritorio\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.frmCarritoCompra.resources
+C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.frmCarritoCompra.resources
+C:\Users\ianne\OneDrive\Escritorio\Facultad\LUG\PROYECTO_LUG_COMICS\PROYECTO_LUG_COMICS\ProyectoLugComics\obj\Debug\ProyectoLugComics.Forms.frmPagoFinal.resources

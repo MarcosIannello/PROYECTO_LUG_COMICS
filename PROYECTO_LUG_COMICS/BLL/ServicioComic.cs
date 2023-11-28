@@ -9,6 +9,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Net.Mime.MediaTypeNames;
+using System.Drawing;
 
 namespace BLL
 {
@@ -60,6 +62,19 @@ namespace BLL
             }
         }
 
+        public int EditarStock(int id, int stock)
+        {
+            try
+            {
+                int resultado = comicDAL.EditarStock(id, stock);
+                return resultado;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         public List<Comic> TraerComics(string id = null)
         {
             try
@@ -89,6 +104,21 @@ namespace BLL
 
         }
 
+        public string BDImgToBase64(byte[] img)
+        {
+            try
+            {
+                string base64String = Convert.ToBase64String(img);
+                return base64String;
+
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+            }
+
+        }
+
         public MemoryStream ByteToImage(byte[] img)
         {
             // byte[] img = (byte[])dgvComics.CurrentRow.Cells[6].Value;
@@ -97,6 +127,6 @@ namespace BLL
             return ms;
         }
 
-
+      
     }
 }

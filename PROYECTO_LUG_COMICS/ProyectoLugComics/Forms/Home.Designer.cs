@@ -29,11 +29,9 @@
         private void InitializeComponent()
         {
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMostrarComics = new Guna.UI2.WinForms.Guna2Button();
             this.BtnComprarComics = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2CircleButton1
@@ -53,7 +51,7 @@
             this.guna2CircleButton1.HoverState.FillColor = System.Drawing.Color.White;
             this.guna2CircleButton1.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2CircleButton1.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2CircleButton1.Location = new System.Drawing.Point(757, 11);
+            this.guna2CircleButton1.Location = new System.Drawing.Point(952, 12);
             this.guna2CircleButton1.Name = "guna2CircleButton1";
             this.guna2CircleButton1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.guna2CircleButton1.Size = new System.Drawing.Size(28, 28);
@@ -61,18 +59,6 @@
             this.guna2CircleButton1.Text = "-";
             this.guna2CircleButton1.UseTransparentBackground = true;
             this.guna2CircleButton1.Click += new System.EventHandler(this.guna2CircleButton1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::ProyectoLugComics.Properties.Resources._6885ab56_64a5_45b9_ad1d_86fd70f543c1;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(828, 418);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // btnCloseLogin
             // 
@@ -91,7 +77,7 @@
             this.btnCloseLogin.HoverState.FillColor = System.Drawing.Color.White;
             this.btnCloseLogin.HoverState.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseLogin.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.btnCloseLogin.Location = new System.Drawing.Point(790, 11);
+            this.btnCloseLogin.Location = new System.Drawing.Point(985, 12);
             this.btnCloseLogin.Name = "btnCloseLogin";
             this.btnCloseLogin.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnCloseLogin.Size = new System.Drawing.Size(28, 28);
@@ -112,7 +98,7 @@
             this.btnMostrarComics.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnMostrarComics.ForeColor = System.Drawing.Color.DimGray;
             this.btnMostrarComics.IndicateFocus = true;
-            this.btnMostrarComics.Location = new System.Drawing.Point(319, 12);
+            this.btnMostrarComics.Location = new System.Drawing.Point(436, 70);
             this.btnMostrarComics.Name = "btnMostrarComics";
             this.btnMostrarComics.Size = new System.Drawing.Size(180, 45);
             this.btnMostrarComics.TabIndex = 6;
@@ -132,7 +118,7 @@
             this.BtnComprarComics.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.BtnComprarComics.ForeColor = System.Drawing.Color.DimGray;
             this.BtnComprarComics.IndicateFocus = true;
-            this.BtnComprarComics.Location = new System.Drawing.Point(319, 105);
+            this.BtnComprarComics.Location = new System.Drawing.Point(436, 163);
             this.BtnComprarComics.Name = "BtnComprarComics";
             this.BtnComprarComics.Size = new System.Drawing.Size(180, 45);
             this.BtnComprarComics.TabIndex = 6;
@@ -145,26 +131,23 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(828, 418);
+            this.BackgroundImage = global::ProyectoLugComics.Properties.Resources._6885ab56_64a5_45b9_ad1d_86fd70f543c1;
+            this.ClientSize = new System.Drawing.Size(1038, 649);
             this.Controls.Add(this.BtnComprarComics);
             this.Controls.Add(this.btnMostrarComics);
             this.Controls.Add(this.btnCloseLogin);
             this.Controls.Add(this.guna2CircleButton1);
-            this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.frmHome_FormClosed);
             this.Load += new System.EventHandler(this.frmHome_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
         private Guna.UI2.WinForms.Guna2Button btnMostrarComics;
