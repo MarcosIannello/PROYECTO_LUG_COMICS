@@ -33,6 +33,7 @@
             // 
             // btnCerrarSesion
             // 
+            this.btnCerrarSesion.Animated = true;
             this.btnCerrarSesion.BackColor = System.Drawing.Color.Transparent;
             this.btnCerrarSesion.BorderRadius = 8;
             this.btnCerrarSesion.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -42,7 +43,7 @@
             this.btnCerrarSesion.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnCerrarSesion.FillColor = System.Drawing.Color.Purple;
             this.btnCerrarSesion.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.btnCerrarSesion.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Italic);
+            this.btnCerrarSesion.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnCerrarSesion.ForeColor = System.Drawing.Color.White;
             this.btnCerrarSesion.Location = new System.Drawing.Point(3, 3);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
