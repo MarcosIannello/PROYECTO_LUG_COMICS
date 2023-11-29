@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DAL;
 using System.Security.Cryptography;
+using BE;
 
 namespace BLL
 {
@@ -38,6 +39,12 @@ namespace BLL
             int resultado = UsuarioDal.RegistrarUsuario(username, hashPassword);
 
             return resultado;
+        }
+
+        public List<Usuarios> TraerUsuarios(string id = null)
+        {
+            List<Usuarios> lUsuarios = UsuarioDal.TraerUsuarios(id);
+            return lUsuarios;
         }
 
     }

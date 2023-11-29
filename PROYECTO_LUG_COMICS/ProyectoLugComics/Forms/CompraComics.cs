@@ -26,9 +26,14 @@ namespace ProyectoLugComics.Forms
         int indicesComics;
         int indiceActual;
         List<Comic> ComicsEnCarrito = new List<Comic>();
+        ServicioUsuarioLogueado oServUL = new ServicioUsuarioLogueado();
+        UsuarioLogueado user = new UsuarioLogueado();
 
         private void CompraComics_Load(object sender, EventArgs e)
         {
+            user = oServUL.TraerUsuarioLogueado();
+            txtUserLogueadoName.Text = $"User: {user.NombreUsuario}";
+
             comics.Clear();
             comics = oServComics.TraerComics();
 

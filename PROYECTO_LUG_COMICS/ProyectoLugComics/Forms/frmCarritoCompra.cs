@@ -1,4 +1,5 @@
 ﻿using BE;
+using BLL;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,8 @@ namespace ProyectoLugComics.Forms
     {
         List<Comic> lcomics = new List<Comic>();
         List<dynamic> resumenPago = new List<dynamic>();
+        ServicioUsuarioLogueado oServUL = new ServicioUsuarioLogueado();
+        UsuarioLogueado user = new UsuarioLogueado();
         public frmCarritoCompra(List<Comic> comicsCarrito)
         {
             lcomics = comicsCarrito;
@@ -29,7 +32,8 @@ namespace ProyectoLugComics.Forms
 
             txtCantArticulos.Text = lcomics.Count.ToString();
             txtTotalAPagar.Text = lcomics.Sum(x => x.Precio).ToString();
-
+            user = oServUL.TraerUsuarioLogueado();
+            txtUserLogueadoName.Text = $"User: {user.NombreUsuario}";
         }
 
         private void guna2TextBox1_TextChanged(object sender, EventArgs e)

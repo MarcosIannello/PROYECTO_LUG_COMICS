@@ -44,6 +44,7 @@
             this.btnRedirigirPago = new Guna.UI2.WinForms.Guna2Button();
             this.txtTotalAPagar = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtCantArticulos = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtUserLogueadoName = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.GridItemsCarrito)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -277,6 +278,29 @@
             this.txtCantArticulos.TabIndex = 0;
             this.txtCantArticulos.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
             // 
+            // txtUserLogueadoName
+            // 
+            this.txtUserLogueadoName.BackColor = System.Drawing.Color.Transparent;
+            this.txtUserLogueadoName.BorderColor = System.Drawing.Color.Black;
+            this.txtUserLogueadoName.BorderRadius = 10;
+            this.txtUserLogueadoName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserLogueadoName.DefaultText = "";
+            this.txtUserLogueadoName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserLogueadoName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserLogueadoName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserLogueadoName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserLogueadoName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserLogueadoName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUserLogueadoName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUserLogueadoName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserLogueadoName.Location = new System.Drawing.Point(26, 21);
+            this.txtUserLogueadoName.Name = "txtUserLogueadoName";
+            this.txtUserLogueadoName.PasswordChar = '\0';
+            this.txtUserLogueadoName.PlaceholderText = "";
+            this.txtUserLogueadoName.SelectedText = "";
+            this.txtUserLogueadoName.Size = new System.Drawing.Size(195, 32);
+            this.txtUserLogueadoName.TabIndex = 9;
+            // 
             // frmCarritoCompra
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +308,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1038, 649);
+            this.Controls.Add(this.txtUserLogueadoName);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.GridItemsCarrito);
             this.Controls.Add(this.btnCloseLogin);
@@ -312,5 +337,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridViewButtonColumn btnEliminar;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserLogueadoName;
     }
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using BE;
 
 namespace DAL
 {
@@ -47,5 +48,27 @@ namespace DAL
             return resultado;
         }
 
+        public List<Usuarios> TraerUsuarios(string id = null)
+        {
+            List <Usuarios> lUsuarios = new List<Usuarios>();
+            ConexionSQL conexionSQL = new ConexionSQL();
+            SqlParameter[] parametros = new SqlParameter[1];
+            parametros[0] = new SqlParameter("@id", id);
+
+            var resultado = conexionSQL.Leer("TRAER_USUARIOS", parametros);
+
+            foreach (DataRow row in resultado.Rows)
+            {
+                Usuarios usuario = new Usuarios
+                {
+                    id = Convert.ToInt32(row["IdUsuario"]),
+                    NombreUsuario = row["nombreUsuario"].ToString(),
+                    Password = row["password"].ToString()
+                };
+                lUsuarios.Add(usuario);
+            }
+
+            return lUsuarios;
+        }
     }
 }

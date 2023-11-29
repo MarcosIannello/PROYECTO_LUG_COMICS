@@ -44,6 +44,8 @@
     <Compile Include="PasswordHasher.cs" />
     <Compile Include="ServicioComic.cs" />
     <Compile Include="ServicioPagos.cs" />
+    <Compile Include="ServicioPermisoUsuario.cs" />
+    <Compile Include="ServicioUsuarioLogueado.cs" />
     <Compile Include="ServicioUsuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
