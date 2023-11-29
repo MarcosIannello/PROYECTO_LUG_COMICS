@@ -9,15 +9,23 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- =============================================
-CREATE PROCEDURE TRAER_PAGOS_COMICS
+CREATE or alter PROCEDURE TRAER_PAGOS_COMICS
 @idUsuario int = null
 
 AS
 BEGIN
 	
-	if(@idUsuario is null)
+	if @idUsuario is null
+	begin 
 		select * from ProyectoLUG.PagoComic
+	end
 	else
+	begin
 		select * from ProyectoLUG.PagoComic where idUsuario = @idUsuario
+	end
+
 END
 GO
+
+--select * from ProyectoLUG.Usuarios where idUsuario = 144463912
+
