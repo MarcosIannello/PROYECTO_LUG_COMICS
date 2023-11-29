@@ -11,6 +11,7 @@ using BLL;
 using MetroSet_UI.Forms;
 using ProyectoLugComics.Forms;
 using BE;
+using System.Web.UI.WebControls;
 
 namespace ProyectoLugComics
 {
@@ -22,6 +23,7 @@ namespace ProyectoLugComics
         }
         ServicioUsuarioLogueado sUsuarioLogueado = new ServicioUsuarioLogueado();
         UsuarioLogueado user = new UsuarioLogueado();
+        ServicioPagos oServPagos = new ServicioPagos();
 
         private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -31,6 +33,17 @@ namespace ProyectoLugComics
         private void frmHome_Load(object sender, EventArgs e)
         {
             user = sUsuarioLogueado.TraerUsuarioLogueado();
+            txtUserLogueadoName.Text = $"User: {user.NombreUsuario}";
+
+            if(user.IdPermiso == 1)
+            {
+                AdminView();
+            }
+            else
+            {
+                userView();
+            }
+
         }
 
         private void btnCloseLogin_Click(object sender, EventArgs e)
@@ -46,6 +59,7 @@ namespace ProyectoLugComics
        
         private void btnCloseLogin_Click_1(object sender, EventArgs e)
         {
+            sUsuarioLogueado.EliminarUsuarioLogueado();
             Application.Exit();
         }
 
@@ -83,6 +97,28 @@ namespace ProyectoLugComics
             CompraComics compraComics = new CompraComics();
             this.Hide();
             compraComics.Show();
+        }
+
+        public void AdminView()
+        {
+            btnMostrarComics.Visible = true;
+            gridUltimosMovimientos.DataSource = null;
+            List<dynamic> lpagos = oServPagos.traerPagos();
+            gridUltimosMovimientos.DataSource = lpagos;
+        }
+        
+
+        public void userView()
+        {
+            btnMostrarComics.Visible = false;
+            gridUltimosMovimientos.DataSource = null;
+            gridUltimosMovimientos.DataSource = oServPagos.traerPagos(user.ID.ToString());
+
+        }
+
+        private void guna2TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

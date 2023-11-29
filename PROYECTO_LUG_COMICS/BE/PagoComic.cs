@@ -63,6 +63,13 @@ namespace BE
             set { fecha = value; }
         }
 
+        private int idUsuario;
+
+        public int ID_USUARIO
+        {
+            get { return idUsuario; }
+            set { idUsuario = value; }
+        }
 
 
     }

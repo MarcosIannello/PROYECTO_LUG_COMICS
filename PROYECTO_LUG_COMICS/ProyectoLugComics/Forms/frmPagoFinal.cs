@@ -19,6 +19,9 @@ namespace ProyectoLugComics.Forms
         ServicioPagos oServPagos = new ServicioPagos();
         ServicioComic oServComic = new  ServicioComic();
         frmHome home = new frmHome();
+        ServicioUsuarioLogueado oServUL = new ServicioUsuarioLogueado();
+        UsuarioLogueado user = new UsuarioLogueado();
+
         public frmPagoFinal(List<dynamic> lResumenPago, List<Comic> comicsAModificar)
         {
             resumen = lResumenPago; //RESUMEN DE PAGO PARA VISUAL
@@ -30,6 +33,8 @@ namespace ProyectoLugComics.Forms
         {
             txtTotalAPagar.Text = resumen.Sum(r => r.Precio).ToString();
             txtCantArticulos.Text = resumen.Count.ToString();
+            user = oServUL.TraerUsuarioLogueado();
+            txtUserLogueadoName.Text = $"User: {user.NombreUsuario}";
         }
 
         private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -69,7 +74,8 @@ namespace ProyectoLugComics.Forms
             string tipoTarjeta = cmbTarjeta.SelectedItem.ToString();
             string numTarjeta = txtNumeroTarjeta.Text;
             int importe = Convert.ToInt32(txtTotalAPagar.Text);
-            int resultado = oServPagos.InsertarPago(domicilio,tipoTarjeta,numTarjeta,importe);
+            int usuarioLogueadoId = user.ID;
+            int resultado = oServPagos.InsertarPago(domicilio,tipoTarjeta,numTarjeta,importe,usuarioLogueadoId);
 
             if(resultado == 1)
             {

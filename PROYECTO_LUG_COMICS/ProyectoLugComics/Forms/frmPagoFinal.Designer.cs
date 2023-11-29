@@ -45,6 +45,7 @@
             this.txtCantArticulos = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnCloseLogin = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.txtUserLogueadoName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GroupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -393,11 +394,35 @@
             this.btnCloseLogin.UseTransparentBackground = true;
             this.btnCloseLogin.Click += new System.EventHandler(this.btnCloseLogin_Click);
             // 
+            // txtUserLogueadoName
+            // 
+            this.txtUserLogueadoName.BackColor = System.Drawing.Color.Transparent;
+            this.txtUserLogueadoName.BorderColor = System.Drawing.Color.Black;
+            this.txtUserLogueadoName.BorderRadius = 10;
+            this.txtUserLogueadoName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUserLogueadoName.DefaultText = "";
+            this.txtUserLogueadoName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUserLogueadoName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUserLogueadoName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserLogueadoName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUserLogueadoName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserLogueadoName.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtUserLogueadoName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtUserLogueadoName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUserLogueadoName.Location = new System.Drawing.Point(12, 12);
+            this.txtUserLogueadoName.Name = "txtUserLogueadoName";
+            this.txtUserLogueadoName.PasswordChar = '\0';
+            this.txtUserLogueadoName.PlaceholderText = "";
+            this.txtUserLogueadoName.SelectedText = "";
+            this.txtUserLogueadoName.Size = new System.Drawing.Size(146, 32);
+            this.txtUserLogueadoName.TabIndex = 12;
+            // 
             // frmPagoFinal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1038, 649);
+            this.Controls.Add(this.txtUserLogueadoName);
             this.Controls.Add(this.guna2CircleButton1);
             this.Controls.Add(this.btnCloseLogin);
             this.Controls.Add(this.guna2GroupBox1);
@@ -430,5 +455,6 @@
         private Guna.UI2.WinForms.Guna2Button btnPagoFinal;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2CircleButton btnCloseLogin;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserLogueadoName;
     }
 }
