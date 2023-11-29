@@ -8,14 +8,20 @@ namespace BE
 {
     public class Usuarios
     {
-		public Usuarios(int id, string nombreUsuario, string contrasena)
+        /*public Usuarios(int id, string nombreUsuario, string contrasena)
 		{
 			this.ID = id;	
 			this.NOMBREUSUARIO = nombreUsuario;
 			this.Password = contrasena;
-		}
+		}*/
 
-		private int ID;
+        public Usuarios()
+        {
+            
+        }
+
+
+        private int ID;
 		public int id
 		{
 			get { return ID; }

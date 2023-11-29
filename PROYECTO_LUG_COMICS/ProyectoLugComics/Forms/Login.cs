@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using BLL;
 using MetroSet_UI.Forms;
+using BE;
 
 namespace ProyectoLugComics
 {
@@ -24,14 +25,25 @@ namespace ProyectoLugComics
         {
             
             ServicioUsuarios sUsuarios = new ServicioUsuarios();
-
+            ServicioPermisoUsuario sPermisoUsuario = new ServicioPermisoUsuario();
+            ServicioUsuarioLogueado sUsuarioLogueado = new ServicioUsuarioLogueado();
             string userName = txtUsername.Text;
             string password = txtPassword.Text;
             bool resultado = Convert.ToBoolean(sUsuarios.ValidarUsuario(userName, password));
 
             if (resultado)
-            {
+            {   
+                List<Usuarios> lUsuarios = sUsuarios.TraerUsuarios();
+                var UsuarioLogueado = lUsuarios.Find(x => x.NombreUsuario == userName);
+                int PermisoUsuario = sPermisoUsuario.TraerPermisoPorUsuario(UsuarioLogueado.id);
                 MessageBox.Show($"Bienvenido al sistema {userName}");
+                UsuarioLogueado Usuario = new UsuarioLogueado
+                {
+                    ID = UsuarioLogueado.id,
+                    NombreUsuario = UsuarioLogueado.NombreUsuario,
+                    IdPermiso = PermisoUsuario
+                };
+                sUsuarioLogueado.InsertarUsuarioLogueado(Usuario);
                 frmHome Home = new frmHome();
                 Home.Show();
                 this.Hide();

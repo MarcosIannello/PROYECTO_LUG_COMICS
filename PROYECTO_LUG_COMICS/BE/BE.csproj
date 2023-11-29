@@ -44,6 +44,7 @@
     <Compile Include="PagoComic.cs" />
     <Compile Include="Comic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsuarioLogueado.cs" />
     <Compile Include="Usuarios.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

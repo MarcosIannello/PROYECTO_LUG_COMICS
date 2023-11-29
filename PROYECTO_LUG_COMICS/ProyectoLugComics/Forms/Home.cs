@@ -7,8 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BLL;
 using MetroSet_UI.Forms;
 using ProyectoLugComics.Forms;
+using BE;
 
 namespace ProyectoLugComics
 {
@@ -18,6 +20,8 @@ namespace ProyectoLugComics
         {
             InitializeComponent();
         }
+        ServicioUsuarioLogueado sUsuarioLogueado = new ServicioUsuarioLogueado();
+        UsuarioLogueado user = new UsuarioLogueado();
 
         private void frmHome_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -26,7 +30,7 @@ namespace ProyectoLugComics
 
         private void frmHome_Load(object sender, EventArgs e)
         {
-
+            user = sUsuarioLogueado.TraerUsuarioLogueado();
         }
 
         private void btnCloseLogin_Click(object sender, EventArgs e)
